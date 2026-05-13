@@ -57,6 +57,23 @@ const Pricing = () => {
     }
   ];
 
+  const handleMail = (plan) => {
+    const message = `I'm interested in the ${plan.badge} plan (${plan.price}).\n\n` +
+                 `Plan Description: ${plan.description}\n\n` +
+                 `Plan Features:\n${plan.features.map(f => `- ${f}`).join('\n')}\n\n` +
+                 `Please get in touch with me!`;
+    
+    // 1. Dispatch custom event to fill the form
+    const event = new CustomEvent('fillContactForm', { detail: { message } });
+    window.dispatchEvent(event);
+
+    // 2. Scroll to contact section
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="pricing" className="pricing-section">
       <div className="section-heading-wrapper">
@@ -79,7 +96,7 @@ const Pricing = () => {
           pick your<br />flavor
         </motion.h2>
       </div>
-      <motion.div 
+      <motion.div
         className="pricing-container"
         initial="hidden"
         whileInView="visible"
@@ -95,8 +112,8 @@ const Pricing = () => {
         }}
       >
         {plans.map((plan, index) => (
-          <motion.div 
-            key={index} 
+          <motion.div
+            key={index}
             className={`pricing-card ${plan.id}`}
             variants={{
               hidden: { opacity: 0, x: index % 2 === 0 ? -50 : 50 },
@@ -112,9 +129,23 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <a href="tel:9405909432" className="card-cta-btn" style={{ textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}>{plan.cta}</a>
+              <div className="card-cta-group">
+                <button 
+                  onClick={() => handleMail(plan)}
+                  className="card-cta-btn mail-btn"
+                >
+                  Mail
+                </button>
+                <a 
+                  href="tel:9405909432" 
+                  className="card-cta-btn call-btn"
+                  style={{ textDecoration: 'none', textAlign: 'center' }}
+                >
+                  Call
+                </a>
+              </div>
             </div>
-            
+
             <div className="card-right">
               <span className="card-badge">{plan.badge}</span>
               <div className="price-info">

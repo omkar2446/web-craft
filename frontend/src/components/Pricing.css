@@ -92,19 +92,25 @@
   border-radius: 50%;
 }
 
-.card-cta-btn {
+.card-cta-group {
   margin-top: auto;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.card-cta-btn {
   background-color: #f6d94e;
   border: 2px solid #3b001f;
-  padding: 15px;
+  padding: 12px 10px;
   border-radius: 50px;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   color: #3b001f;
   cursor: pointer;
   transition: all 0.2s ease;
-  width: 100%;
+  flex: 1;
 }
 
 .card-cta-btn:hover {
@@ -188,7 +194,30 @@
     flex-direction: column;
   }
 
+  .card-left {
+    order: 2; /* Move features below the price on mobile */
+  }
+
   .card-right {
-    padding-top: 60px;
+    order: 1;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-badge {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  .price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 }

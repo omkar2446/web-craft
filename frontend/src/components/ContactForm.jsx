@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -10,14 +10,53 @@ const ContactForm = () => {
     message: ''
   });
 
+  const [status, setStatus] = useState({ loading: false, success: null, error: null });
+
+  React.useEffect(() => {
+    const handleAutoFill = (e) => {
+      if (e.detail && e.detail.message) {
+        setFormData(prev => ({ ...prev, message: e.detail.message }));
+      }
+    };
+    window.addEventListener('fillContactForm', handleAutoFill);
+    return () => window.removeEventListener('fillContactForm', handleAutoFill);
+  }, []);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    window.location.href = 'tel:9405909432';
+    setStatus({ loading: true, success: null, error: null });
+
+    try {
+      const response = await fetch('https://web-craft-9gv2.onrender.com/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus({ loading: false, success: 'Message sent successfully!', error: null });
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        setStatus({ loading: false, success: null, error: data.error || 'Something went wrong.' });
+      }
+    } catch (err) {
+      console.error('Error connecting to backend:', err);
+      // Fallback to mailto if backend is down
+      const { name, email, phone, message } = formData;
+      const subject = encodeURIComponent(`New Inquiry from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:support@webcraftstudios.co.in?subject=${subject}&body=${body}`;
+
+      setStatus({ loading: false, success: 'Redirecting to email client...', error: null });
+    }
   };
 
   const fields = [
@@ -125,6 +164,7 @@ const ContactForm = () => {
             <motion.button
               type="submit"
               className="submit-btn"
+              disabled={status.loading}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -132,8 +172,31 @@ const ContactForm = () => {
               whileHover={{ scale: 1.04, transition: { duration: 0.15 } }}
               whileTap={{ scale: 0.97 }}
             >
-              Submit Message
+              {status.loading ? 'Sending...' : 'Submit Message'}
             </motion.button>
+
+            <AnimatePresence>
+              {status.success && (
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  className="status-message success"
+                >
+                  {status.success}
+                </motion.p>
+              )}
+              {status.error && (
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  className="status-message error"
+                >
+                  {status.error}
+                </motion.p>
+              )}
+            </AnimatePresence>
           </form>
         </motion.div>
       </div>

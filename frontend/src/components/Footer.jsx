@@ -6,14 +6,14 @@ const Footer = () => {
   const footerLinks = ['Home', 'Services', 'Benefits', 'Portfolio', 'Reviews', 'About'];
   const footerSections = [
     { label: 'PHONE', value: <a href="tel:9405909432" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9405909432</a> },
-    { label: 'Email', value: <a href="mailto:support@webcraftstudios.co.in" style={{ color: 'inherit', textDecoration: 'none' }}>support@webcraftstudios.co.in</a> },
+    { label: 'Email', value: <a href="otambe655@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>support@webcraftstudios.co.in</a> },
     {
       label: 'Address',
-      value: <>5-78-30/4, 6/2<br />PANDARIPURAM,<br />GUNTUR 522006<br />ANDHRA PRADESH</>
+      value: <>413714<br />LONI,<br />AHMEDNAGAR<br />MAHARASHTRA</>
     },
     {
       label: 'Opening Hours',
-      value: <>Mon to Sat: 9.00am - 8.30pm<br />Sun: Closed</>
+      value: <>Mon to Sat: 9.00am - 8.30pm<br /></>
     }
   ];
 

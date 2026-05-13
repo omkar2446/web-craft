@@ -6,7 +6,7 @@ const Footer = () => {
   const footerLinks = ['Home', 'Services', 'Benefits', 'Portfolio', 'Reviews', 'About'];
   const footerSections = [
     { label: 'PHONE', value: <a href="tel:9405909432" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9405909432</a> },
-    { label: 'Email', value: <a href="otambe655@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>support@webcraftstudios.co.in</a> },
+    { label: 'Email', value: <a href="mailto:otambe655@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>otambe655@gmail.com</a> },
     {
       label: 'Address',
       value: <>413714<br />LONI,<br />AHMEDNAGAR<br />MAHARASHTRA</>

@@ -53,7 +53,7 @@ const ContactForm = () => {
       const { name, email, phone, message } = formData;
       const subject = encodeURIComponent(`New Inquiry from ${name}`);
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
-      window.location.href = `mailto:support@webcraftstudios.co.in?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:otambe655@gmail.com?subject=${subject}&body=${body}`;
 
       setStatus({ loading: false, success: 'Redirecting to email client...', error: null });
     }

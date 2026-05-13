@@ -1,0 +1,130 @@
+.hero-v2 {
+  min-height: 80vh;
+  background-color: #fdf8c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.hero-main-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  /* Stable, responsive sizing */
+  font-weight: 900;
+  color: #3b001f;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-subtext {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 400px;
+  z-index: 10;
+}
+
+.hero-subtext p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3b001f;
+  line-height: 1.2;
+}
+
+.hero-cta-btn {
+  margin-top: 20px;
+  background-color: #f6d94e;
+  border: 2px solid #3b001f;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 14px;
+  color: #3b001f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.hero-cta-btn:hover {
+  background-color: #3b001f;
+  color: #f6d94e;
+}
+
+.hero-central-visual {
+  width: 140px;
+  /* Reduced from 200px */
+  height: 140px;
+  /* Reduced from 200px */
+  border-radius: 50%;
+  border: 8px solid #f7b8d9;
+  overflow: hidden;
+  margin-top: 30px;
+  z-index: 10;
+  box-shadow: 0 10px 40px rgba(59, 0, 31, 0.2);
+}
+
+.hero-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating Stickers */
+.hero-badge {
+  position: absolute;
+  padding: 5px 12px;
+  background-color: #b9d8a7;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #3b001f;
+  z-index: 10;
+  transform: rotate(-10deg);
+}
+
+/* Ribbed background effect at the bottom */
+.hero-bottom-pattern {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: repeating-linear-gradient(90deg,
+      #f7b8d9,
+      #f7b8d9 20px,
+      #fdf8c1 20px,
+      #fdf8c1 40px);
+  opacity: 0.3;
+  mask-image: linear-gradient(to top, black, transparent);
+  -webkit-mask-image: linear-gradient(to top, black, transparent);
+}
+
+/* Scalloped bottom edge */
+.hero-v2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-repeat: repeat-x;
+  background-size: 160px 80px;
+  background-image: radial-gradient(circle at 80px 80px, #b9d8a7 80px, transparent 81px);
+  z-index: 20;
+}
+
+@media (max-width: 768px) {
+  .hero-main-title {
+    font-size: 30vw;
+  }
+}

@@ -1,0 +1,87 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import './Footer.css';
+
+const Footer = () => {
+  const footerLinks = ['Home', 'Services', 'Benefits', 'Portfolio', 'Reviews', 'About'];
+  const footerSections = [
+    { label: 'PHONE', value: <a href="tel:9405909432" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9405909432</a> },
+    { label: 'Email', value: <a href="mailto:support@webcraftstudios.co.in" style={{ color: 'inherit', textDecoration: 'none' }}>support@webcraftstudios.co.in</a> },
+    {
+      label: 'Address',
+      value: <>5-78-30/4, 6/2<br />PANDARIPURAM,<br />GUNTUR 522006<br />ANDHRA PRADESH</>
+    },
+    {
+      label: 'Opening Hours',
+      value: <>Mon to Sat: 9.00am - 8.30pm<br />Sun: Closed</>
+    }
+  ];
+
+  return (
+    <footer className="footer-container">
+      <div className="footer-top">
+        {/* Left: Contact Info — each block staggers in */}
+        <div className="footer-left">
+          {footerSections.map((section, i) => (
+            <motion.div
+              key={i}
+              className="footer-section"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.1 }}
+            >
+              <span className="footer-label">{section.label}</span>
+              <span className="footer-value">{section.value}</span>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Right: Nav links — each stagger from the right */}
+        <div className="footer-right">
+          {footerLinks.map((link, i) => (
+            <motion.a
+              key={i}
+              href="#"
+              className="footer-link"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.08 }}
+              whileHover={{ x: 6, transition: { duration: 0.15 } }}
+            >
+              {link}
+            </motion.a>
+          ))}
+        </div>
+      </div>
+
+      {/* Massive WEBCRAFT text — scale in from center */}
+      <div className="massive-text-container">
+        <motion.h2
+          className="massive-text"
+          initial={{ opacity: 0, scale: 0.7 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+        >
+          WEBCRAFT
+        </motion.h2>
+      </div>
+
+      {/* Bottom bar — fade in last */}
+      <motion.div
+        className="footer-bottom"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <span className="bottom-text">Build it with us</span>
+        <span className="bottom-text">@webcraft-studios</span>
+      </motion.div>
+    </footer>
+  );
+};
+
+export default Footer;

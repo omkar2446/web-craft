@@ -1,0 +1,194 @@
+.pricing-section {
+  background-color: #d2d2ff;
+  padding: 100px 0 160px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Scalloped edge at the top */
+/* Removed top scallops as we use bottom scallops from above */
+.pricing-section::before {
+  display: none;
+}
+
+.pricing-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-repeat: repeat-x;
+  background-size: 160px 80px;
+  background-image: radial-gradient(circle at 80px 80px, #fdf8c1 80px, transparent 81px);
+  z-index: 10;
+}
+
+.pricing-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  color: #3b001f;
+  margin-bottom: 60px;
+  text-transform: lowercase;
+  letter-spacing: -2px;
+}
+
+.pricing-container {
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pricing-card {
+  display: flex;
+  border-radius: 40px;
+  overflow: hidden;
+  min-height: 350px;
+  transition: transform 0.3s ease;
+  border: 2px solid rgba(253, 248, 193, 0.1);
+}
+
+.pricing-card:hover {
+  transform: scale(1.02);
+}
+
+.card-left {
+  flex: 1.5;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b001f;
+  border-bottom: 1px solid rgba(59, 0, 31, 0.2);
+  padding-bottom: 8px;
+}
+
+.feature-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #3b001f;
+  border-radius: 50%;
+}
+
+.card-cta-btn {
+  margin-top: auto;
+  background-color: #f6d94e;
+  border: 2px solid #3b001f;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #3b001f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.card-cta-btn:hover {
+  background-color: #3b001f;
+  color: #f6d94e;
+}
+
+.card-right {
+  flex: 1;
+  background-color: #fdf8c1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.card-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.price-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #3b001f;
+  margin-bottom: 5px;
+}
+
+.price-period {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3b001f;
+  opacity: 0.6;
+}
+
+.card-desc {
+  font-size: 12px;
+  color: #3b001f;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Card Colors */
+.pricing-card.mint {
+  background-color: #b9d8a7;
+}
+
+.pricing-card.salmon {
+  background-color: #e6b0b0;
+}
+
+.pricing-card.blue {
+  background-color: #d2d2ff;
+}
+
+.mint .card-badge {
+  background-color: #f7b8d9;
+}
+
+.salmon .card-badge {
+  background-color: #b9d8a7;
+}
+
+.blue .card-badge {
+  background-color: #e6b0b0;
+}
+
+@media (max-width: 850px) {
+  .pricing-card {
+    flex-direction: column;
+  }
+
+  .card-right {
+    padding-top: 60px;
+  }
+}

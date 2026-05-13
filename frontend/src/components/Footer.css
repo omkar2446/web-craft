@@ -1,0 +1,118 @@
+.footer-container {
+  background-color: #3b001f;
+  padding: 80px 60px 20px 60px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-label {
+  color: #f6d94e;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.footer-value {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.footer-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+  margin-top: 5px;
+}
+
+.footer-link {
+  color: #f6d94e;
+  font-weight: 800;
+  font-size: 32px;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+.massive-text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+  z-index: 5;
+  line-height: 0.8;
+}
+
+.massive-text {
+  font-size: 25vw;
+  font-weight: 900;
+  color: rgba(247, 184, 217, 0.2);
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  transform: scaleY(1.4);
+  transform-origin: bottom;
+  margin-bottom: -0.05em;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  position: relative;
+  z-index: 10;
+  padding-top: 40px;
+}
+
+.bottom-text {
+  color: #ffffff;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .footer-right {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+  }
+  .footer-link {
+    font-size: 24px;
+  }
+}

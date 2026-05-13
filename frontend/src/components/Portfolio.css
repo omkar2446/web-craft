@@ -1,0 +1,102 @@
+.portfolio-section {
+  background-color: #d4f1df;
+  padding: 100px 0 160px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scallop — Portfolio's mint bleeds down into Process as salmon bumps */
+.portfolio-section::before {
+  display: none;
+}
+
+.portfolio-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-repeat: repeat-x;
+  background-size: 160px 80px;
+  background-image: radial-gradient(circle at 80px 80px, #e6b0b0 80px, transparent 81px);
+  z-index: 10;
+}
+
+.portfolio-container {
+  max-width: 1100px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  row-gap: 60px;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-visual {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .project-visual {
+  transform: translateY(-10px);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #3b001f;
+}
+
+.case-study-btn {
+  background-color: #f6d94e;
+  border: 1px solid #3b001f;
+  padding: 6px 15px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #3b001f;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 0px #3b001f;
+}
+
+.case-study-btn:hover {
+  background-color: #3b001f;
+  color: #f6d94e;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 0px #3b001f;
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+}

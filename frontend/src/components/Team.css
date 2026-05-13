@@ -1,0 +1,201 @@
+.team-section {
+  background-color: #fdf8c1;
+  padding: 100px 0 160px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.team-section::before {
+  display: none;
+}
+
+.team-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-repeat: repeat-x;
+  background-size: 160px 80px;
+  background-image: radial-gradient(circle at 80px 80px, #e6b0b0 80px, transparent 81px);
+  z-index: 10;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-intro {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+.team-intro p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3b001f;
+  line-height: 1.4;
+  font-family: 'Outfit', sans-serif;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.team-card {
+  padding: 40px 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.photo-frame {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: white;
+  z-index: 1;
+}
+
+.team-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-cover: cover;
+  position: relative;
+  z-index: 2;
+  border: 4px solid #fff;
+}
+
+.team-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #3b001f;
+  margin-bottom: 5px;
+}
+
+.team-role {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3b001f;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.team-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b001f;
+  transition: background 0.3s ease;
+}
+
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Card Colors */
+.card-peach {
+  background-color: #fbd6a2;
+}
+
+.card-blue {
+  background-color: #c4d3f5;
+}
+
+.card-pink {
+  background-color: #f7b8d9;
+}
+
+.card-lavender {
+  background-color: #e3d2f5;
+}
+
+.card-purple {
+  background-color: #d2d2ff;
+}
+
+.card-yellow {
+  background-color: #f6d94e;
+}
+
+.card-salmon {
+  background-color: #e6b0b0;
+}
+
+.card-mint {
+  background-color: #b9d8a7;
+}
+
+/* Join Us Card */
+.join-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #f6d94e;
+  border: 2px solid #3b001f;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.join-btn:hover {
+  background-color: #3b001f;
+  color: #f6d94e;
+}
+
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

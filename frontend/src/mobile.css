@@ -1,0 +1,728 @@
+/* ===================================================
+   MOBILE RESPONSIVE — Master override
+   Applied AFTER all component CSS with !important
+   =================================================== */
+
+/* ---- GLOBAL ---- */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  * {
+    max-width: 100vw;
+  }
+
+  section {
+    overflow: hidden !important;
+  }
+
+  .section-heading-wrapper {
+    margin-bottom: 30px !important;
+  }
+
+  .heading-badge {
+    font-size: 10px !important;
+    padding: 5px 14px !important;
+  }
+
+  .deco-blob {
+    display: none !important;
+  }
+}
+
+/* ---- HERO ---- */
+@media (max-width: 768px) {
+  .hero-v2 {
+    min-height: 60vh !important;
+    padding: 100px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .hero-main-title {
+    font-size: 22vw !important;
+    word-break: break-all !important;
+  }
+
+  .hero-badge {
+    display: none !important;
+  }
+
+  .hero-subtext .text-editorial {
+    font-size: 13px !important;
+    padding: 0 10px !important;
+  }
+
+  .hero-cta-btn.text-badge {
+    font-size: 11px !important;
+    padding: 10px 22px !important;
+  }
+
+  .hero-central-visual {
+    max-width: 180px !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-visual-img {
+    max-width: 100% !important;
+  }
+
+  .hero-v2::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #b9d8a7 40px, transparent 41px) !important;
+    bottom: 0 !important;
+  }
+}
+
+/* ---- BRANDS ---- */
+@media (max-width: 768px) {
+  .brands-section {
+    padding: 60px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .brands-heading {
+    font-size: 32px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .brands-marquee-wrapper {
+    overflow: hidden !important;
+    width: 100% !important;
+  }
+
+  .brand-logo {
+    width: 60px !important;
+    height: 30px !important;
+  }
+
+  .stats-bar {
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+    padding: 24px 16px !important;
+    border-radius: 20px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .badge-numbers {
+    flex-basis: 100% !important;
+    text-align: center !important;
+  }
+
+  .stat-item {
+    flex: 1 1 42% !important;
+    text-align: center !important;
+  }
+
+  .stat-number {
+    font-size: 28px !important;
+  }
+
+  .stat-label {
+    font-size: 10px !important;
+  }
+
+  .brands-section::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #fdf8c1 40px, transparent 41px) !important;
+  }
+}
+
+/* ---- SERVICES ---- */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .services-container {
+    width: 100% !important;
+    gap: 14px !important;
+  }
+
+  .service-header {
+    padding: 16px 18px !important;
+  }
+
+  .service-header h3 {
+    font-size: 16px !important;
+  }
+
+  .service-content {
+    padding: 16px 18px !important;
+  }
+
+  .service-content p {
+    font-size: 12px !important;
+  }
+
+  .services-section::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #d4f1df 40px, transparent 41px) !important;
+  }
+}
+
+/* ---- PORTFOLIO ---- */
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 60px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .portfolio-heading {
+    font-size: 32px !important;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    row-gap: 32px !important;
+    width: 100% !important;
+  }
+
+  .project-visual {
+    border-radius: 18px !important;
+    aspect-ratio: 4/3 !important;
+  }
+
+  .project-title {
+    font-size: 12px !important;
+  }
+
+  .case-study-btn {
+    font-size: 9px !important;
+    padding: 5px 10px !important;
+  }
+
+  .portfolio-section::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #e6b0b0 40px, transparent 41px) !important;
+  }
+}
+
+/* ---- PROCESS ---- */
+@media (max-width: 768px) {
+  .process-section {
+    padding: 60px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .process-heading {
+    font-size: 32px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .process-container {
+    flex-direction: column !important;
+    padding: 24px 18px !important;
+    border-radius: 20px !important;
+    gap: 24px !important;
+    width: 92% !important;
+  }
+
+  .process-left {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .steps-nav {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .step-num {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 14px !important;
+  }
+
+  .step-title {
+    font-size: 20px !important;
+  }
+
+  .step-desc {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+  }
+
+  .step-card-visual {
+    max-width: 100% !important;
+  }
+
+  .process-section::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #fbd6a2 40px, transparent 41px) !important;
+  }
+}
+
+/* ---- TESTIMONIALS ---- */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .testimonials-heading {
+    font-size: 32px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .testimonials-container {
+    gap: 12px !important;
+    padding: 0 0 16px !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+  }
+
+  .testimonial-card {
+    min-width: 260px !important;
+    max-width: 280px !important;
+    padding: 18px !important;
+    scroll-snap-align: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .card-delete-btn {
+    opacity: 0.7 !important;
+  }
+
+  .testimonial-text {
+    font-size: 11px !important;
+  }
+
+  .author-name {
+    font-size: 12px !important;
+  }
+
+  .profile-pic {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .profile-initial {
+    font-size: 16px !important;
+  }
+
+  .feedback-cta {
+    margin-top: 30px !important;
+  }
+
+  .feedback-prompt {
+    font-size: 13px !important;
+    text-align: center !important;
+  }
+
+  .add-feedback-btn {
+    font-size: 12px !important;
+    padding: 10px 20px !important;
+  }
+
+  .feedback-form-wrapper {
+    max-width: 100% !important;
+    padding: 0 4px !important;
+  }
+
+  .feedback-form {
+    padding: 20px 16px !important;
+    border-radius: 18px !important;
+  }
+
+  .feedback-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .feedback-submit-btn {
+    align-self: stretch !important;
+    text-align: center !important;
+  }
+
+  .testimonials-section::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #d2d2ff 40px, transparent 41px) !important;
+  }
+}
+
+/* ---- PRICING ---- */
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 60px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .pricing-heading {
+    font-size: 36px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .pricing-container {
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  .pricing-card {
+    flex-direction: column !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+  }
+
+  .card-left {
+    padding: 20px 18px !important;
+  }
+
+  .card-right {
+    padding: 20px 18px !important;
+  }
+
+  .price-text {
+    font-size: 32px !important;
+  }
+
+  .price-period {
+    font-size: 12px !important;
+  }
+
+  .card-badge {
+    font-size: 10px !important;
+  }
+
+  .card-desc {
+    font-size: 12px !important;
+  }
+
+  .card-cta-btn {
+    font-size: 12px !important;
+    padding: 10px 20px !important;
+  }
+
+  .feature-item {
+    font-size: 11px !important;
+  }
+
+  .features-list {
+    gap: 6px !important;
+  }
+
+  .pricing-section::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #fdf8c1 40px, transparent 41px) !important;
+  }
+}
+
+/* ---- TEAM ---- */
+@media (max-width: 768px) {
+  .team-section {
+    padding: 60px 16px 100px !important;
+    overflow: hidden !important;
+  }
+
+  .team-heading {
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .team-subtitle {
+    font-size: 13px !important;
+    padding: 0 10px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    width: 100% !important;
+    padding: 0 10px !important;
+  }
+
+  .member-card {
+    max-width: 100% !important;
+  }
+
+  .member-photo {
+    height: 220px !important;
+    border-radius: 18px !important;
+  }
+
+  .member-name {
+    font-size: 16px !important;
+  }
+
+  .member-role {
+    font-size: 11px !important;
+  }
+
+  .team-section::after {
+    height: 40px !important;
+    background-size: 80px 40px !important;
+    background-image: radial-gradient(circle at 40px 40px, #e6b0b0 40px, transparent 41px) !important;
+  }
+}
+
+/* ---- FAQ ---- */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 60px 16px !important;
+    overflow: hidden !important;
+  }
+
+  .faq-heading {
+    font-size: 32px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .faq-container {
+    width: 100% !important;
+  }
+
+  .faq-item {
+    padding: 16px 14px !important;
+    border-radius: 14px !important;
+  }
+
+  .faq-question {
+    font-size: 13px !important;
+    gap: 8px !important;
+  }
+
+  .faq-answer {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+  }
+
+  .faq-toggle {
+    font-size: 18px !important;
+    min-width: 24px !important;
+  }
+}
+
+/* ---- CONTACT FORM ---- */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 16px !important;
+    overflow: hidden !important;
+  }
+
+  .contact-container {
+    flex-direction: column !important;
+    gap: 24px !important;
+    padding: 24px 18px !important;
+    border-radius: 20px !important;
+    width: 100% !important;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100% !important;
+  }
+
+  .illustration-box {
+    max-width: 160px !important;
+    margin: 0 auto !important;
+  }
+
+  .quote-heading {
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+
+  .quote-subtext {
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+
+  .form-label {
+    font-size: 10px !important;
+  }
+
+  .form-input {
+    font-size: 13px !important;
+    padding: 10px 12px !important;
+    border-radius: 12px !important;
+  }
+
+  .submit-btn {
+    width: 100% !important;
+    font-size: 13px !important;
+    padding: 12px !important;
+  }
+}
+
+/* ---- FOOTER ---- */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 40px 20px 16px !important;
+    min-height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .footer-top {
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  .footer-label {
+    font-size: 16px !important;
+  }
+
+  .footer-value {
+    font-size: 12px !important;
+  }
+
+  .footer-right {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px 24px !important;
+  }
+
+  .footer-link {
+    font-size: 18px !important;
+  }
+
+  .massive-text {
+    font-size: 24vw !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 6px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .bottom-text {
+    font-size: 10px !important;
+  }
+}
+
+/* ---- NAVBAR ---- */
+@media (max-width: 768px) {
+  .navbar-v2 {
+    padding: 10px 16px !important;
+  }
+
+  .menu-trigger {
+    font-size: 11px !important;
+    padding: 7px 16px !important;
+  }
+
+  .dropdown-menu {
+    right: 12px !important;
+    top: 50px !important;
+    min-width: 170px !important;
+  }
+
+  .dropdown-link {
+    font-size: 13px !important;
+    padding: 8px 16px !important;
+  }
+}
+
+/* ---- DELETE MODAL ---- */
+@media (max-width: 768px) {
+  .delete-modal {
+    padding: 24px 20px !important;
+    border-radius: 20px !important;
+    max-width: 320px !important;
+    box-shadow: 5px 5px 0px #3b001f !important;
+  }
+
+  .delete-modal-icon {
+    font-size: 36px !important;
+  }
+
+  .delete-modal-title {
+    font-size: 17px !important;
+  }
+
+  .delete-modal-sub {
+    font-size: 12px !important;
+  }
+
+  .delete-password-input {
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .delete-modal-actions {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .delete-cancel-btn,
+  .delete-confirm-btn {
+    font-size: 13px !important;
+    padding: 10px !important;
+  }
+}
+
+/* ---- SCROLL PROGRESS ---- */
+@media (max-width: 768px) {
+  .scroll-progress {
+    height: 2px !important;
+  }
+}
+
+/* ===== Extra small (< 480px) ===== */
+@media (max-width: 480px) {
+  .hero-main-title {
+    font-size: 20vw !important;
+  }
+
+  .brands-heading,
+  .process-heading,
+  .testimonials-heading,
+  .faq-heading,
+  .team-heading {
+    font-size: 28px !important;
+  }
+
+  .pricing-heading {
+    font-size: 30px !important;
+  }
+
+  .stat-number {
+    font-size: 24px !important;
+  }
+
+  .stat-item {
+    flex: 1 1 100% !important;
+  }
+
+  .footer-right {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-link {
+    font-size: 16px !important;
+  }
+
+  .testimonial-card {
+    min-width: 240px !important;
+    max-width: 260px !important;
+  }
+
+  .pricing-card {
+    border-radius: 16px !important;
+  }
+
+  .massive-text {
+    font-size: 28vw !important;
+  }
+}

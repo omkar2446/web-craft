@@ -155,9 +155,16 @@
   .stats-bar {
     flex-wrap: wrap;
     gap: 30px;
+    padding-top: 50px;
   }
 
   .stat-item {
     flex: 1 1 40%;
+  }
+
+  .badge-numbers {
+    left: 0;
+    right: 0;
+    margin-inline: auto;
   }
 }

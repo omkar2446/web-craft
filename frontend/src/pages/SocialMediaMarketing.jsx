@@ -66,7 +66,7 @@ const SocialMediaMarketing = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
         >
-          We don't just post. We build communities, spark conversations, and drive real business growth. Whether you need a standalone social media powerhouse or an integrated digital strategy alongside your website, we've got you covered.
+          WebCraft Studio is the top digital marketing team in Loni and Pune. We don't just post. We build communities, spark conversations, and drive real business growth. Whether you need a standalone social media powerhouse or an integrated digital strategy, our Loni-based experts have you covered.
         </motion.p>
       </section>
 
@@ -81,7 +81,7 @@ const SocialMediaMarketing = () => {
         >
           <i className="fa-solid fa-bolt" style={{ fontSize: '32px', marginBottom: '15px' }}></i>
           <h3>Web + Social? Or Just Social?</h3>
-          <p>We are totally flexible. Hire us to build your website AND run your socials, or just bring us on to completely take over your Instagram, LinkedIn, and Facebook marketing. You choose the firepower.</p>
+          <p>We are totally flexible. Hire the best web developer in Loni to build your website AND run your socials, or just bring on our top digital marketing team in Pune to completely take over your Instagram, LinkedIn, and Facebook marketing. You choose the firepower.</p>
         </motion.div>
       </div>
 

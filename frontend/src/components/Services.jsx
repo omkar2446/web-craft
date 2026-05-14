@@ -24,7 +24,7 @@ const Services = () => {
       title: "Web Design and Development",
       subtitle: "Pretty and powerful websites that actually work.",
       color: "mint",
-      desc: "Your website is your digital home—and it shouldn't feel like a messy or confusing house. We design and build sites that are both beautiful and brainy. From clean code to buttery-smooth interfaces, our sites are crafted to delight users and make sure they stick around.",
+      desc: "WebCraft Studio is your premier digital home—and it shouldn't feel like a messy house. As a top web developer in Loni, we design and build sites that are both beautiful and brainy. From clean code to buttery-smooth interfaces, our sites are crafted by expert web developers in Pune to delight users and ensure results.",
       tags: ["UI/UX Design", "Custom Web Development", "Responsive Design", "Website Maintenance", "Landing Page Design"],
       images: [
         "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600",
@@ -43,7 +43,7 @@ const Services = () => {
       title: "Digital Marketing",
       subtitle: "Get seen. Get clicks. Get results.",
       color: "blue",
-      desc: "Strategic marketing campaigns that drive growth and maximize ROI. We combine data with creativity to reach your audience where they live online.",
+      desc: "Our Loni digital marketing team creates strategic campaigns that drive growth and maximize ROI. As the top digital marketing team in Pune and Loni, we combine data with creativity to reach your audience where they live online.",
       tags: ["SEO", "PPC Campaigns", "Email Marketing", "Analytics"],
       images: []
     }

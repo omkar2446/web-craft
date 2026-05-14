@@ -9,7 +9,7 @@ const Team = () => {
   const members = [
     {
       name: "omkar",
-      role: "Co-Founder & Full Stack Developer ",
+      role: "Full Stack Developer ",
       color: "card-peach",
       photo: "/omkar.jpeg",
       instagram: "https://instagram.com/omkartambe24_46",
@@ -18,7 +18,7 @@ const Team = () => {
     },
     {
       name: "sarthak",
-      role: "Co-Founder & Full Stack Developer",
+      role: "Full Stack Developer",
       color: "card-blue",
       photo: "/sarthak.png",
       instagram: "https://instagram.com/sarthak_tanpure_9290",
@@ -27,7 +27,7 @@ const Team = () => {
     },
     {
       name: "yash",
-      role: "Co-Founder & Branding & Digital Marketing Specialist",
+      role: "Branding & Digital Marketing Specialist",
       color: "card-pink",
       photo: "/yash.jpeg",
       instagram: "https://instagram.com/yashtambe1",

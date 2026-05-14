@@ -45,11 +45,12 @@ const ContactForm = () => {
         setStatus({ loading: false, success: 'Message sent successfully!', error: null });
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
-        setStatus({ loading: false, success: null, error: data.error || 'Something went wrong.' });
+        console.error('Backend error:', data);
+        setStatus({ loading: false, success: null, error: data.error || 'The server encountered an error. Please try again later.' });
       }
     } catch (err) {
-      console.error('Error connecting to backend:', err);
-      // Fallback to mailto if backend is down
+      console.error('Network or Connection Error:', err);
+      // Fallback to mailto if backend is down or blocked by CORS
       const { name, email, phone, message } = formData;
       const subject = encodeURIComponent(`New Inquiry from ${name}`);
       const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);

@@ -13,11 +13,16 @@ CORS(app)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME') # Your email
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD') # Your app password
 app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_USERNAME')
 
 mail = Mail(app)
+
+@app.route('/', methods=['GET'])
+def health_check():
+    return jsonify({"status": "healthy", "message": "WebCraft Backend is running"}), 200
 
 @app.route('/api/contact', methods=['POST'])
 def contact():
@@ -25,23 +30,23 @@ def contact():
         data = request.json
         name = data.get('name')
         email = data.get('email')
+        phone = data.get('phone', 'Not provided')
         subject = data.get('subject', 'New Inquiry from WebCraft Studio')
         message_body = data.get('message')
 
         if not name or not email or not message_body:
-            return jsonify({"error": "Missing required fields"}), 400
+            return jsonify({"error": "Missing required fields (name, email, or message)"}), 400
 
         # Construct Email
         msg = Message(
             subject=f"Contact Form: {subject}",
-            recipients=[app.config['MAIL_USERNAME']], # Send to yourself
-            body=f"Name: {name}\nEmail: {email}\n\nMessage:\n{message_body}"
+            recipients=[app.config['MAIL_USERNAME']],
+            body=f"Name: {name}\nEmail: {email}\nPhone: {phone}\n\nMessage:\n{message_body}"
         )
         
         # Uncomment the line below when you have valid credentials
         mail.send(msg)
-        
-        print(f"Message received from {name} ({email}): {message_body}")
+        print(f"Success: Message sent from {name}")
         
         return jsonify({"message": "Message sent successfully!"}), 200
     except Exception as e:

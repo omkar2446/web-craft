@@ -5,8 +5,9 @@ import './Footer.css';
 const Footer = () => {
   const footerLinks = ['Home', 'Services', 'Benefits', 'Portfolio', 'Reviews', 'About'];
   const footerSections = [
-    { label: 'PHONE', value: <a href="tel:9405909432" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9405909432</a> },
-    { label: 'Email', value: <a href="mailto:otambe655@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>otambe655@gmail.com</a> },
+    { label: 'PHONE', value: <a href="tel:9405909432" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9405909432 <br /> +91 9307919092</a> },
+
+    { label: 'Email', value: <a href="mailto:webcraft.studio003@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>webcraft.studio003@gmail.com</a> },
     {
       label: 'Address',
       value: <>413714<br />LONI,<br />AHMEDNAGAR<br />MAHARASHTRA</>
@@ -78,7 +79,7 @@ const Footer = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
       >
         <span className="bottom-text">Build it with us</span>
-        <span className="bottom-text">@webcraft-studios</span>
+        <span className="bottom-text">@WEBCRAFT STUDIO</span>
       </motion.div>
     </footer>
   );

@@ -14,7 +14,7 @@ const Services = () => {
       subtitle: "Make your mark - boldly and beautifully.",
       color: "orange",
       desc: "Your brand is so much more than just a logo—it's your personality, your story, your vibe. We help bring that to life with a look and feel that is uniquely you. Whether you're just getting started or ready for a glow-up, we craft everything from logos to full-on brand systems that speak your truth.",
-      tags: ["Logo Design", "Brand Strategy", "Visual Identity", "Brand Guidelines", "Content Marketing"],
+      tags: ["Logo Design", "Brand Strategy", "Visual Identity", "Brand Guidelines", "Content Marketing", "Professional Branding Loni", "Business Identity Shirdi"],
       images: [
         "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&q=80&w=600"
@@ -24,8 +24,8 @@ const Services = () => {
       title: "Web Design and Development",
       subtitle: "Pretty and powerful websites that actually work.",
       color: "mint",
-      desc: "WebCraft Studio is your premier digital home—and it shouldn't feel like a messy house. As a top web developer in Loni, we design and build sites that are both beautiful and brainy. From clean code to buttery-smooth interfaces, our sites are crafted by expert web developers in Pune to delight users and ensure results.",
-      tags: ["UI/UX Design", "Custom Web Development", "Responsive Design", "Website Maintenance", "Landing Page Design"],
+      desc: "WebCraft is your premier digital home. As a top software company in Loni and leading web developer in Shirdi, we design and build sites that are both beautiful and brainy. From clean code to buttery-smooth interfaces, our sites are crafted by expert web developers to delight users and ensure top results.",
+      tags: ["UI/UX Design", "Custom Web Development", "Responsive Design", "Website Maintenance", "Landing Page Design", "Ecommerce Developer Shirdi", "Top Web Developer Loni"],
       images: [
         "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
@@ -43,8 +43,8 @@ const Services = () => {
       title: "Digital Marketing",
       subtitle: "Get seen. Get clicks. Get results.",
       color: "blue",
-      desc: "Our Loni digital marketing team creates strategic campaigns that drive growth and maximize ROI. As the top digital marketing team in Pune and Loni, we combine data with creativity to reach your audience where they live online.",
-      tags: ["SEO", "PPC Campaigns", "Email Marketing", "Analytics"],
+      desc: "Our digital marketing team in Loni and Shirdi creates strategic campaigns that drive growth and maximize ROI. As the top digital marketing company and software company in Loni, we combine data with creativity to reach your audience where they live online.",
+      tags: ["SEO", "PPC Campaigns", "Email Marketing", "Analytics", "Best SEO Agency Loni", "Digital Marketing Shirdi"],
       images: []
     }
   ];

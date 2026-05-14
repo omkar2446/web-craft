@@ -109,7 +109,7 @@ const Portfolio = () => {
           >
             <TiltCard className="portfolio-card">
               <div className="project-visual" style={{ backgroundColor: project.bgColor }}>
-                <img src={project.image} alt={project.title} className="project-img" loading="lazy" />
+                <img src={project.image} alt={`${project.title} - Best Website Development project by WebCraft Loni`} className="project-img" loading="lazy" />
               </div>
               <div className="project-info">
                 <span className="project-title">{project.title}</span>

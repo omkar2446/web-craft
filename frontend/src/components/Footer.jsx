@@ -1,9 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
-  const footerLinks = ['Home', 'Services', 'Benefits', 'Portfolio', 'Reviews', 'About'];
+  const footerLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Pricing', path: '/pricing' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Blog', path: '/blog' }
+  ];
   const footerSections = [
     { label: 'PHONE', value: <a href="tel:9405909432" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9405909432 <br /> +91 9307919092</a> },
 
@@ -41,18 +49,18 @@ const Footer = () => {
         {/* Right: Nav links — each stagger from the right */}
         <div className="footer-right">
           {footerLinks.map((link, i) => (
-            <motion.a
+            <motion.div
               key={i}
-              href="#"
-              className="footer-link"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.08 }}
               whileHover={{ x: 6, transition: { duration: 0.15 } }}
             >
-              {link}
-            </motion.a>
+              <Link to={link.path} className="footer-link">
+                {link.name}
+              </Link>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -42,6 +42,14 @@ const FAQ = () => {
     {
       q: "Do you offer ongoing support after the project is completed?",
       a: "Yes! We offer maintenance packages for websites and ongoing content creation plans to keep your brand looking fresh and fabulous."
+    },
+    {
+      q: "Who is the best web developer in Loni?",
+      a: "WebCraft is widely recognized as the top software company in Loni, providing world-class web development and digital marketing services to local businesses and startups."
+    },
+    {
+      q: "Do you provide web development services in Shirdi?",
+      a: "Absolutely! We are a leading web developer in Shirdi, helping local businesses establish a powerful online presence with modern, high-performance websites and strategic digital marketing."
     }
   ];
 

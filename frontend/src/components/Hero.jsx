@@ -45,7 +45,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <p className="text-editorial">Your brand deserves to be<br />Seen, Heard, and Remembered by the best Web Developer in Loni.</p>
+            <p className="text-editorial">Your brand deserves to be<br />Seen, Heard, and Remembered by the top software company in Loni and leading web developer in Shirdi.</p>
           </motion.div>
           
           <motion.a 
@@ -67,7 +67,7 @@ const Hero = () => {
           >
             <img 
               src="/380dc924-040c-42aa-90b0-87f659cf794e.jpeg" 
-              alt="WebCraft Studio - Best Web Developer and Digital Marketing Team in Loni, Pune" 
+              alt="WebCraft - Top Software Company in Loni & Best Web Developer in Shirdi" 
               className="hero-visual-img"
             />
           </motion.div>

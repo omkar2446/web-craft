@@ -10,7 +10,7 @@ const Footer = () => {
     { label: 'Email', value: <a href="mailto:webcraft.studio003@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>webcraft.studio003@gmail.com</a> },
     {
       label: 'Address',
-      value: <>413714<br />LONI,<br />AHMEDNAGAR<br />MAHARASHTRA</>
+      value: <>413714<br />LONI,<br />AHILYANAGAR<br />MAHARASHTRA</>
     },
     {
       label: 'Opening Hours',
@@ -79,7 +79,7 @@ const Footer = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
       >
         <span className="bottom-text">Build it with the best Web Developer in Loni</span>
-        <span className="bottom-text">@webcraft-studios | Top Pune Digital Agency</span>
+        <span className="bottom-text">@webcraft-studio | Top Ahilyanagar's Digital Agency</span>
       </motion.div>
     </footer>
   );

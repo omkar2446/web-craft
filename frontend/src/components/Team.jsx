@@ -29,7 +29,7 @@ const Team = () => {
       name: "yash",
       role: "Branding & Digital Marketing Specialist",
       color: "card-pink",
-      photo: "/yash.jpeg",
+      photo: "/yash.jpg.jpeg",
       instagram: "https://instagram.com/yashtambe1",
       email: "mailto:tambeyash90@gmail.com",
       linkedin: "https://linkedin.com",

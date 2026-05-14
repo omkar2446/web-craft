@@ -78,13 +78,8 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-<<<<<<< HEAD
         <span className="bottom-text">Build it with the best Web Developer in Loni</span>
         <span className="bottom-text">@webcraft-studios | Top Pune Digital Agency</span>
-=======
-        <span className="bottom-text">Build it with us</span>
-        <span className="bottom-text">@WEBCRAFT STUDIO</span>
->>>>>>> 0b439bbaf6b06d4ee988b6a051fa9a10f0ad5e9d
       </motion.div>
     </footer>
   );

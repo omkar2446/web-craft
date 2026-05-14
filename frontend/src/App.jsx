@@ -6,8 +6,10 @@ import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import PricingPage from './pages/PricingPage';
+import SocialMediaMarketing from './pages/SocialMediaMarketing';
 import Lenis from 'lenis';
 import { AnimatePresence } from 'framer-motion';
+import CustomCursor from './components/CustomCursor';
 
 function ScrollProgressBar() {
   const [progress, setProgress] = useState(0);
@@ -57,6 +59,7 @@ function AppContent() {
 
   return (
     <div className="app min-h-screen">
+      <CustomCursor />
       <ScrollProgressBar />
       <Navbar />
       <main>
@@ -67,6 +70,7 @@ function AppContent() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/social-media-marketing" element={<SocialMediaMarketing />} />
           </Routes>
         </AnimatePresence>
       </main>

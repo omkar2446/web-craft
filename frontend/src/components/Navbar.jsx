@@ -17,6 +17,10 @@ const Navbar = () => {
   ];
 
   const scrollToSection = (id) => {
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${id}`;
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -27,9 +31,14 @@ const Navbar = () => {
   return (
     <nav className="navbar-v2">
       <motion.a
-        href="#"
+        href="/"
         className="nav-logo"
-        onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+        onClick={(e) => { 
+          if (window.location.pathname === '/') {
+            e.preventDefault(); 
+            window.scrollTo({ top: 0, behavior: 'smooth' }); 
+          }
+        }}
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}

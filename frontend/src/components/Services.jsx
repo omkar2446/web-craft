@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import './Services.css';
 import { Plus } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
   const [openIndex, setOpenIndex] = useState(0);
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -152,6 +154,7 @@ const Services = () => {
                             src={img} 
                             alt="Service Visual" 
                             className="service-visual-img"
+                            loading="lazy"
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: i * 0.15 + 0.1, duration: 0.5 }}
@@ -166,6 +169,37 @@ const Services = () => {
           </motion.div>
         ))}
       </motion.div>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '60px' }}>
+        <button 
+          onClick={() => navigate('/social-media-marketing')}
+          style={{
+            backgroundColor: '#3b001f',
+            color: '#fdf8c1',
+            padding: '16px 36px',
+            borderRadius: '50px',
+            fontFamily: 'Outfit, sans-serif',
+            fontSize: '18px',
+            fontWeight: '800',
+            cursor: 'pointer',
+            border: 'none',
+            boxShadow: '0 6px 0px #b9d8a7',
+            transition: 'all 0.2s ease'
+          }}
+          onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+          onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+          onMouseDown={(e) => {
+            e.currentTarget.style.transform = 'translateY(4px)';
+            e.currentTarget.style.boxShadow = '0 2px 0px #b9d8a7';
+          }}
+          onMouseUp={(e) => {
+            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.boxShadow = '0 6px 0px #b9d8a7';
+          }}
+        >
+          Explore Social Media Marketing
+        </button>
+      </div>
     </section>
   );
 };

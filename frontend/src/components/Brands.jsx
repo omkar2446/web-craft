@@ -50,12 +50,12 @@ function CountUpStat({ stat, index }) {
 
 const Brands = () => {
   const logos = [
-    { src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Myntra_logo.png", color: '#fff' },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg", color: '#f7b8d9' },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Instagram_logo.svg", color: '#b9d8a7' },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg", color: '#fff' },
     { src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg", color: '#000' },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/3/33/V_logo_2021.svg", color: '#fdf8c1' },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Myntra_logo.png", color: '#fff' },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg", color: '#fff' },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/8/80/Meesho_Logo_Full.png", color: '#fdf8c1' },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg", color: '#fff' },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg", color: '#b9d8a7' },
   ];
 
   const allLogos = [...logos, ...logos, ...logos, ...logos];
@@ -110,7 +110,7 @@ const Brands = () => {
                 animationDelay: `${index * 0.3}s`
               }}
             >
-              <img src={logo.src} alt="Brand Logo" />
+              <img src={logo.src} alt="Brand Logo" loading="lazy" />
             </div>
           ))}
         </div>

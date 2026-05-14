@@ -2,6 +2,8 @@ import React from 'react';
 import './Hero.css';
 import { motion } from 'framer-motion';
 
+import { SplitText } from '../utils/animations';
+
 const Hero = () => {
   return (
     <section className="hero-v2">
@@ -32,16 +34,11 @@ const Hero = () => {
       </motion.div>
 
       <div className="hero-content">
-        <motion.h1 
-          className="hero-main-title"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          WEBCRAFT
-        </motion.h1>
+        <h1 className="hero-main-title">
+          <SplitText text="WEBCRAFT" baseDelay={0.2} />
+        </h1>
 
-        <div className="flex flex-col items-center">
+        <div className="hero-content-col">
           <motion.div 
             className="hero-subtext"
             initial={{ opacity: 0 }}

@@ -50,8 +50,9 @@ def contact():
         
         return jsonify({"message": "Message sent successfully!"}), 200
     except Exception as e:
-        print(f"Error: {str(e)}")
-        return jsonify({"error": "Failed to send message"}), 500
+        error_msg = str(e)
+        print(f"Error: {error_msg}")
+        return jsonify({"error": "Failed to send message", "details": error_msg}), 500
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))

@@ -46,7 +46,8 @@ const ContactForm = () => {
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
         console.error('Backend error:', data);
-        setStatus({ loading: false, success: null, error: data.error || 'The server encountered an error. Please try again later.' });
+        const errorText = data.details ? `${data.error}: ${data.details}` : (data.error || 'The server encountered an error. Please try again later.');
+        setStatus({ loading: false, success: null, error: errorText });
       }
     } catch (err) {
       console.error('Network or Connection Error:', err);

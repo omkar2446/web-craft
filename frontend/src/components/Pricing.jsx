@@ -7,8 +7,8 @@ const Pricing = () => {
     {
       id: "mint",
       badge: "Social Media",
-      price: "$299",
-      period: "week",
+      price: "$125.35",
+      period: "month",
       cta: "Book a Call",
       description: "Small to medium-sized businesses looking to build and maintain a consistent online presence without the hassle.",
       features: [
@@ -24,7 +24,7 @@ const Pricing = () => {
     {
       id: "salmon",
       badge: "Maintenance",
-      price: "$799",
+      price: "$20.90",
       period: "based on project",
       cta: "Let's Talk",
       description: "Businesses aiming to improve visibility and climb search engine rankings steadily.",
@@ -41,7 +41,7 @@ const Pricing = () => {
     {
       id: "blue",
       badge: "Branding",
-      price: "$2,499",
+      price: "$156.73",
       period: "project",
       cta: "Get Started",
       description: "Entrepreneurs, startups, and businesses ready to establish or refresh their brand identity with a cohesive, professional image.",
@@ -59,10 +59,10 @@ const Pricing = () => {
 
   const handleMail = (plan) => {
     const message = `I'm interested in the ${plan.badge} plan (${plan.price}).\n\n` +
-                 `Plan Description: ${plan.description}\n\n` +
-                 `Plan Features:\n${plan.features.map(f => `- ${f}`).join('\n')}\n\n` +
-                 `Please get in touch with me!`;
-    
+      `Plan Description: ${plan.description}\n\n` +
+      `Plan Features:\n${plan.features.map(f => `- ${f}`).join('\n')}\n\n` +
+      `Please get in touch with me!`;
+
     // 1. Dispatch custom event to fill the form
     const event = new CustomEvent('fillContactForm', { detail: { message } });
     window.dispatchEvent(event);
@@ -130,14 +130,14 @@ const Pricing = () => {
                 ))}
               </ul>
               <div className="card-cta-group">
-                <button 
+                <button
                   onClick={() => handleMail(plan)}
                   className="card-cta-btn mail-btn"
                 >
                   Mail
                 </button>
-                <a 
-                  href="tel:9405909432" 
+                <a
+                  href="tel:9405909432"
                   className="card-cta-btn call-btn"
                   style={{ textDecoration: 'none', textAlign: 'center' }}
                 >

@@ -31,7 +31,7 @@ const ContactForm = () => {
     setStatus({ loading: true, success: null, error: null });
 
     try {
-      const response = await fetch('https://web-craft-9gv2.onrender.com/api/contact', {
+      const response = await fetch('http://127.0.0.1:5000/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

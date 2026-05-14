@@ -34,24 +34,28 @@ function TiltCard({ children, className }) {
 const Portfolio = () => {
   const projects = [
     {
-      title: "Myntra Minis",
-      image: "/saas_dashboard_preview_1778684116671.png",
+      title: "Jay Yogeshwar Solar",
+      link: "https://www.jayyogeshwarsolar.in/",
+      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop",
       bgColor: "#f6d94e"
     },
     {
-      title: "STAFfire.io",
-      image: "/ai_platform_preview_1778684687469.png",
+      title: "Agriconnect",
+      link: "https://agriconnect-ohet.vercel.app/",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop",
+      bgColor: "#eef2e6"
+    },
+    {
+      title: "SongQueue",
+      link: "https://songqueue.vercel.app/",
+      image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=800&auto=format&fit=crop",
       bgColor: "#050505"
     },
     {
-      title: "FirstDawn AI",
-      image: "/marketing_strategy_preview_1778685119195.png",
-      bgColor: "#0a0a0a"
-    },
-    {
-      title: "Fangs - Fun & Entertainment",
-      image: "/vector wallpaper hd spiderman.jpeg",
-      bgColor: "#f3f3f3"
+      title: "Foodihub",
+      link: "https://foodiehub-z1hk.onrender.com/",
+      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop",
+      bgColor: "#ffedd5"
     }
   ];
 
@@ -109,7 +113,7 @@ const Portfolio = () => {
               </div>
               <div className="project-info">
                 <span className="project-title">{project.title}</span>
-                <button className="case-study-btn">View Case Study</button>
+                <button className="case-study-btn" onClick={() => window.open(project.link, '_blank')}>Visit Website</button>
               </div>
             </TiltCard>
           </motion.div>

@@ -44,8 +44,16 @@ const FAQ = () => {
       a: "Yes! We offer maintenance packages for websites and ongoing content creation plans to keep your brand looking fresh and fabulous."
     },
     {
+      q: "Who is the top digital marketing expert in Loni BK and KH?",
+      a: "WebCraft is the leading digital marketing agency for Loni BK and Loni KH, specializing in SEO, social media growth, and strategic branding for local businesses."
+    },
+    {
+      q: "Is there a top software developer in Loni Shirdi?",
+      a: "Yes, WebCraft provides expert software development and web design services in Loni Shirdi, helping businesses scale with custom digital solutions."
+    },
+    {
       q: "Who is the best web developer in Loni?",
-      a: "WebCraft is widely recognized as the top software company in Loni, providing world-class web development and digital marketing services to local businesses and startups."
+      a: "WebCraft is widely recognized as the top software developer in Loni, providing world-class web development and digital marketing services to local businesses and startups."
     },
     {
       q: "Do you provide web development services in Shirdi?",

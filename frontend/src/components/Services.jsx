@@ -24,8 +24,8 @@ const Services = () => {
       title: "Web Design and Development",
       subtitle: "Pretty and powerful websites that actually work.",
       color: "mint",
-      desc: "WebCraft is your premier digital home. As a top software company in Loni and leading web developer in Shirdi, we design and build sites that are both beautiful and brainy. From clean code to buttery-smooth interfaces, our sites are crafted by expert web developers to delight users and ensure top results.",
-      tags: ["UI/UX Design", "Custom Web Development", "Responsive Design", "Website Maintenance", "Landing Page Design", "Ecommerce Developer Shirdi", "Top Web Developer Loni"],
+      desc: "WebCraft is your premier digital home. As the top software developer in Loni and leading web developer in Shirdi, we design and build sites that are both beautiful and brainy. Serving Loni BK and Loni KH with expert web development that ensures top search rankings.",
+      tags: ["UI/UX Design", "Custom Web Development", "Responsive Design", "Website Maintenance", "Landing Page Design", "Ecommerce Developer Shirdi", "Top Web Developer Loni", "Loni BK Web Design"],
       images: [
         "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
@@ -43,8 +43,8 @@ const Services = () => {
       title: "Digital Marketing",
       subtitle: "Get seen. Get clicks. Get results.",
       color: "blue",
-      desc: "Our digital marketing team in Loni and Shirdi creates strategic campaigns that drive growth and maximize ROI. As the top digital marketing company and software company in Loni, we combine data with creativity to reach your audience where they live online.",
-      tags: ["SEO", "PPC Campaigns", "Email Marketing", "Analytics", "Best SEO Agency Loni", "Digital Marketing Shirdi"],
+      desc: "Our digital marketing team in Loni and Shirdi creates strategic campaigns that drive growth and maximize ROI. As the top digital marketing expert in Loni BK and Loni KH, we combine data with creativity to reach your audience where they live online.",
+      tags: ["SEO", "PPC Campaigns", "Email Marketing", "Analytics", "Best SEO Agency Loni", "Digital Marketing Shirdi", "Top Digital Marketing Loni BK"],
       images: []
     }
   ];

@@ -6,6 +6,24 @@ import './BlogPage.css';
 const BlogPage = () => {
   const posts = [
     {
+      title: "Strategic SEO for Hotels and Resorts in Shirdi",
+      date: "May 15, 2024",
+      excerpt: "Shirdi is a hub of hospitality. We provide specialized SEO services for hotels and resorts in Shirdi to help them rank on the first page of Google and attract more pilgrims and tourists.",
+      keywords: ["Hotel SEO Shirdi", "Resort Marketing Shirdi", "Shirdi Digital Marketing", "Top Developer Shirdi"]
+    },
+    {
+      title: "Affordable Web Design for Small Businesses in Loni BK",
+      date: "May 15, 2024",
+      excerpt: "Are you a small business owner in Loni BK? Get a professional, high-converting website that helps you grow. We offer special packages for Loni BK and Loni KH startups.",
+      keywords: ["Loni BK Web Design", "Loni KH Startups", "Affordable Website Loni", "Top Software Developer Loni"]
+    },
+    {
+      title: "Top Digital Marketing & Software Development in Loni BK, KH, and Shirdi",
+      date: "May 15, 2024",
+      excerpt: "WebCraft is expanding its reach to provide elite digital marketing and software development services in Loni BK, Loni KH, and Shirdi. As the top developer in the region, we are committed to helping local businesses dominate the digital space with cutting-edge technology and strategic SEO.",
+      keywords: ["Loni BK", "Loni KH", "Loni Shirdi", "Loni Top Digital Marketing", "Top Developer Loni"]
+    },
+    {
       title: "Why WebCraft is the Top Software Company in Loni",
       date: "May 14, 2024",
       excerpt: "Discover why WebCraft is recognized as the leading software development company in Loni, providing innovative digital solutions for local businesses. Our team of expert developers and designers work tirelessly to ensure your brand stands out in the digital landscape.",

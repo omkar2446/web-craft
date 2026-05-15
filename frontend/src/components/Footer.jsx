@@ -21,6 +21,10 @@ const Footer = () => {
       value: <>413714<br />LONI,<br />AHILYANAGAR<br />MAHARASHTRA</>
     },
     {
+      label: 'Service Areas',
+      value: <>Loni BK, Loni KH,<br />Shirdi, Rahata,<br />Pune & Nashik</>
+    },
+    {
       label: 'Opening Hours',
       value: <>Mon to Sat: 9.00am - 8.30pm<br /></>
     }
@@ -86,8 +90,8 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <span className="bottom-text">Build it with the best Web Developer in Loni</span>
-        <span className="bottom-text">@webcraft-studio | Top Ahilyanagar's Digital Agency</span>
+        <span className="bottom-text">Build it with the Top Software Developer in Loni BK & KH</span>
+        <span className="bottom-text">@webcraft-studio | Top Digital Marketing Agency in Shirdi & Ahilyanagar</span>
       </motion.div>
     </footer>
   );

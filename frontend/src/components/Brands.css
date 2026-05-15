@@ -36,19 +36,27 @@
   font-size: 64px;
   font-weight: 800;
   color: #3b001f;
-  margin-bottom: 80px;
+  margin-top: 10px;
+  margin-bottom: 120px;
   text-align: center;
   line-height: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.brands-badge {
+  top: 0px !important; /* Resetting the relative top from index.css */
+  transform: rotate(-5deg);
 }
 
 .brands-visual-area {
   width: 100%;
   height: 400px;
-  /* Increased from 250px to allow more curve */
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .brands-marquee-inner {

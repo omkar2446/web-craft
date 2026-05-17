@@ -82,6 +82,15 @@ const Portfolio = () => {
         >
           Look what<br />we made!
         </motion.h2>
+        <motion.p
+          style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 60px', color: '#555', fontSize: '1.1rem', lineHeight: '1.6' }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+        >
+          Explore projects delivered by the Loni BK top software developer and Shirdi top software developer. Our Loni BK top digital marketing team ensures every project ranks and converts.
+        </motion.p>
       </div>
 
       <motion.div 
@@ -109,7 +118,7 @@ const Portfolio = () => {
           >
             <TiltCard className="portfolio-card">
               <div className="project-visual" style={{ backgroundColor: project.bgColor }}>
-                <img src={project.image} alt={`${project.title} - Best Website Development project by WebCraft Loni`} className="project-img" loading="lazy" />
+                <img src={project.image} alt={`${project.title} - Loni BK top software developer, Shirdi top software developer project by WebCraft`} className="project-img" loading="lazy" />
               </div>
               <div className="project-info">
                 <span className="project-title">{project.title}</span>

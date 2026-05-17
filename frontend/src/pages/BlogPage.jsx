@@ -6,6 +6,12 @@ import './BlogPage.css';
 const BlogPage = () => {
   const posts = [
     {
+      title: "Why We Are the Loni BK Top Software Developer & Shirdi Top Software Developer",
+      date: "May 17, 2024",
+      excerpt: "Looking for the best tech partner? Discover why WebCraft is recognized as the top software developer Loni BK and top software developer Shirdi. From custom apps to full-stack solutions, we are also the Loni BK top digital marketing team.",
+      keywords: ["Loni BK Top Software Developer", "Shirdi Top Software Developer", "Loni BK Top Digital Marketing Team", "Loni Top Software Developer"]
+    },
+    {
       title: "Strategic SEO for Hotels and Resorts in Shirdi",
       date: "May 15, 2024",
       excerpt: "Shirdi is a hub of hospitality. We provide specialized SEO services for hotels and resorts in Shirdi to help them rank on the first page of Google and attract more pilgrims and tourists.",

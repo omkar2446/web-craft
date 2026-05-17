@@ -90,8 +90,8 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <span className="bottom-text">Build it with the Top Software Developer in Loni BK & KH</span>
-        <span className="bottom-text">@webcraft-studio | Top Digital Marketing Agency in Shirdi & Ahilyanagar</span>
+        <span className="bottom-text">Build with the Loni BK Top Software Developer & Shirdi Top Software Developer</span>
+        <span className="bottom-text">@webcraft-studio | Loni BK Top Digital Marketing Team | Loni Top Software Developer</span>
       </motion.div>
     </footer>
   );

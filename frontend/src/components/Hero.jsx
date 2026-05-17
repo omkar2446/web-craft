@@ -45,7 +45,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <p className="text-editorial">Your brand deserves to be<br />Seen, Heard, and Remembered by the top software developer in Loni, serving Loni BK, Loni KH, and Shirdi with elite digital marketing.</p>
+            <p className="text-editorial">Your brand deserves to be<br />Seen, Heard, and Remembered by the Loni BK top software developer. We are the Shirdi top software developer and Loni BK top digital marketing team.</p>
           </motion.div>
           
           <motion.a 

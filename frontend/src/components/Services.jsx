@@ -13,8 +13,8 @@ const Services = () => {
       title: "Branding & Identity",
       subtitle: "Make your mark - boldly and beautifully.",
       color: "orange",
-      desc: "Your brand is so much more than just a logo—it's your personality, your story, your vibe. We help bring that to life with a look and feel that is uniquely you. Whether you're just getting started or ready for a glow-up, we craft everything from logos to full-on brand systems that speak your truth.",
-      tags: ["Logo Design", "Brand Strategy", "Visual Identity", "Brand Guidelines", "Content Marketing", "Professional Branding Loni", "Business Identity Shirdi"],
+      desc: "Your brand is so much more than just a logo—it's your personality, your story, your vibe. We help bring that to life with a look and feel that is uniquely you. Whether you're just getting started or ready for a glow-up, we craft everything from logos to full-on brand systems that speak your truth. Stand out with the Loni BK top digital marketing team.",
+      tags: ["Logo Design", "Brand Strategy", "Visual Identity", "Brand Guidelines", "Content Marketing", "Professional Branding Loni", "Business Identity Shirdi", "Loni Top Digital Markating"],
       images: [
         "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1551033406-611cf9a28f67?auto=format&fit=crop&q=80&w=600"
@@ -24,8 +24,8 @@ const Services = () => {
       title: "Web Design and Development",
       subtitle: "Pretty and powerful websites that actually work.",
       color: "mint",
-      desc: "WebCraft is your premier digital home. As the top software developer in Loni and leading web developer in Shirdi, we design and build sites that are both beautiful and brainy. Serving Loni BK and Loni KH with expert web development that ensures top search rankings.",
-      tags: ["UI/UX Design", "Custom Web Development", "Responsive Design", "Website Maintenance", "Landing Page Design", "Ecommerce Developer Shirdi", "Top Web Developer Loni", "Loni BK Web Design"],
+      desc: "WebCraft is your premier digital home. As the Loni BK top software developer and Shirdi top software developer, we design and build sites that are both beautiful and brainy. Serving Loni BK, Loni KH, and Shirdi with elite software solutions that ensure top search rankings.",
+      tags: ["UI/UX Design", "Custom Web Development", "Responsive Design", "Website Maintenance", "Landing Page Design", "Ecommerce Developer Shirdi", "Top Software Developer Loni BK", "Top Software Developer Shirdi"],
       images: [
         "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600",
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
@@ -35,16 +35,16 @@ const Services = () => {
       title: "Content Creation",
       subtitle: "Words, visuals, and videos that speak human.",
       color: "pink",
-      desc: "We create content that captures attention and tells your story in the most compelling way possible. From social media assets to long-form video, we make sure your brand is seen and heard.",
-      tags: ["Social Media Content", "Video Production", "Copywriting", "Photography"],
+      desc: "We create content that captures attention and tells your story in the most compelling way possible. From social media assets to long-form video, we make sure your brand is seen and heard. Partner with the top software developer Shirdi to grow your audience.",
+      tags: ["Social Media Content", "Video Production", "Copywriting", "Photography", "Loni Top Software Developer"],
       images: []
     },
     {
       title: "Digital Marketing",
       subtitle: "Get seen. Get clicks. Get results.",
       color: "blue",
-      desc: "Our digital marketing team in Loni and Shirdi creates strategic campaigns that drive growth and maximize ROI. As the top digital marketing expert in Loni BK and Loni KH, we combine data with creativity to reach your audience where they live online.",
-      tags: ["SEO", "PPC Campaigns", "Email Marketing", "Analytics", "Best SEO Agency Loni", "Digital Marketing Shirdi", "Top Digital Marketing Loni BK"],
+      desc: "Our digital marketing team in Loni and Shirdi creates strategic campaigns that drive growth and maximize ROI. As the Loni BK top digital marketing team, we combine data with creativity to reach your audience where they live online.",
+      tags: ["SEO", "PPC Campaigns", "Email Marketing", "Analytics", "Best SEO Agency Loni", "Digital Marketing Shirdi", "Loni BK Top Digital Marketing Team", "Top Developer Shirdi"],
       images: []
     }
   ];

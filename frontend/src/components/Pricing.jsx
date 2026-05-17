@@ -95,6 +95,15 @@ const Pricing = () => {
         >
           pick your<br />flavor
         </motion.h2>
+        <motion.p
+          style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto 60px', color: '#555', fontSize: '1.1rem', lineHeight: '1.6' }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+        >
+          Affordable, high-impact plans from the Loni BK top software developer. Partner with the Loni BK top digital marketing team and Shirdi top software developer to scale your business.
+        </motion.p>
       </div>
       <motion.div
         className="pricing-container"

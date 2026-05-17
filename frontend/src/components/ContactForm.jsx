@@ -111,7 +111,7 @@ const ContactForm = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.35 }}
           >
-            Don't let your ideas sit idle—slide into our inbox and let's make magic!
+            Don't let your ideas sit idle—slide into the inbox of the Loni BK top software developer. Let the Shirdi top software developer and Loni BK top digital marketing team make magic for your brand!
           </motion.p>
         </motion.div>
 

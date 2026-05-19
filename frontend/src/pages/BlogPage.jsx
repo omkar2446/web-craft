@@ -6,88 +6,190 @@ import './BlogPage.css';
 const BlogPage = () => {
   const posts = [
     {
-      title: "Why We Are the Loni BK Top Software Developer & Shirdi Top Software Developer",
-      date: "May 17, 2024",
-      excerpt: "Looking for the best tech partner? Discover why WebCraft is recognized as the top software developer Loni BK and top software developer Shirdi. From custom apps to full-stack solutions, we are also the Loni BK top digital marketing team.",
-      keywords: ["Loni BK Top Software Developer", "Shirdi Top Software Developer", "Loni BK Top Digital Marketing Team", "Loni Top Software Developer"]
+      title: "How to Scale Your Business with the Best Digital Marketing Services in Shirdi",
+      date: "May 20, 2026",
+      excerpt: "Are you running a hotel, resort, or local business in Shirdi? Learn how Shirdi top digital marketing team and elite SEO expert services can dramatically increase your visibility, drive online bookings, and scale your brand in the local market.",
+      keywords: ["Digital Marketing Shirdi", "Shirdi Top Digital Marketing Agency", "Best SEO Agency in Shirdi", "Hotel SEO Shirdi", "Shirdi Digital Marketing Team", "Shirdi SEO Expert"]
     },
     {
-      title: "Strategic SEO for Hotels and Resorts in Shirdi",
-      date: "May 15, 2024",
-      excerpt: "Shirdi is a hub of hospitality. We provide specialized SEO services for hotels and resorts in Shirdi to help them rank on the first page of Google and attract more pilgrims and tourists.",
-      keywords: ["Hotel SEO Shirdi", "Resort Marketing Shirdi", "Shirdi Digital Marketing", "Top Developer Shirdi"]
+      title: "Why Hiring a Local Web Developer in Loni BK & KH is Crucial for Modern Startups",
+      date: "May 19, 2026",
+      excerpt: "Local expertise meets high-end engineering. Discover why hiring the top web developer in Loni BK and Loni KH guarantees faster project delivery, custom software integrations, and pixel-perfect design that sets your startup apart.",
+      keywords: ["Loni Top Web Developer", "Loni BK Top Web Developer", "Loni KH Top Web Developer", "Top Web Developer in Loni", "Loni Web Development Company", "Top Software Developer Loni"]
     },
     {
-      title: "Affordable Web Design for Small Businesses in Loni BK",
-      date: "May 15, 2024",
-      excerpt: "Are you a small business owner in Loni BK? Get a professional, high-converting website that helps you grow. We offer special packages for Loni BK and Loni KH startups.",
-      keywords: ["Loni BK Web Design", "Loni KH Startups", "Affordable Website Loni", "Top Software Developer Loni"]
+      title: "Why Every Business Needs a Website",
+      date: "May 19, 2026",
+      excerpt: "In today's digital era, an online presence is mandatory. Find out why partnering with a custom website developer in Loni or a business website developer in Loni is the first step to securing brand trust.",
+      keywords: ["Web Development SEO Keywords", "Business Website Developer in Loni", "Custom Website Developer in Loni", "Startup Website Development in Loni"]
     },
     {
-      title: "Top Digital Marketing & Software Development in Loni BK, KH, and Shirdi",
-      date: "May 15, 2024",
-      excerpt: "WebCraft is expanding its reach to provide elite digital marketing and software development services in Loni BK, Loni KH, and Shirdi. As the top developer in the region, we are committed to helping local businesses dominate the digital space with cutting-edge technology and strategic SEO.",
-      keywords: ["Loni BK", "Loni KH", "Loni Shirdi", "Loni Top Digital Marketing", "Top Developer Loni"]
+      title: "Benefits of SEO Friendly Website Design",
+      date: "May 18, 2026",
+      excerpt: "Building a site is only half the battle. Discover why SEO friendly website development in Loni ensures search visibility and attracts high-quality local organic leads from day one.",
+      keywords: ["SEO Friendly Website Development in Loni", "How to Improve Website SEO", "Technical SEO Services", "Local Business SEO Services"]
     },
     {
-      title: "Why WebCraft is the Top Software Company in Loni",
-      date: "May 14, 2024",
-      excerpt: "Discover why WebCraft is recognized as the leading software development company in Loni, providing innovative digital solutions for local businesses. Our team of expert developers and designers work tirelessly to ensure your brand stands out in the digital landscape.",
-      keywords: ["Loni Software Company", "Top Software Company Loni", "WebCraft Loni", "Software Development Loni"]
+      title: "How to Grow Business Online",
+      date: "May 17, 2026",
+      excerpt: "Grow your business online using search optimization and advertising. Partner with the top digital marketing agency and use local business SEO services to generate continuous sales.",
+      keywords: ["How to Grow Business Online", "Business Promotion Services", "Online Growth Agency", "Lead Generation Company"]
     },
     {
-      title: "The Future of Web Development in Shirdi",
-      date: "May 12, 2024",
-      excerpt: "Shirdi is becoming a hub for digital transformation. Learn how web development in Shirdi is helping local hospitality and retail businesses grow their online presence. We specialize in creating high-performance websites that capture the essence of your business.",
-      keywords: ["Web Development in Shirdi", "Web Developer Shirdi", "Digital Marketing Shirdi", "Shirdi Tech Solutions"]
+      title: "Importance of Responsive Website Design",
+      date: "May 16, 2026",
+      excerpt: "Most of your traffic is mobile. A responsive website design in Loni ensures that your visitors have a seamless experience, whether on a smartphone or a desktop.",
+      keywords: ["Responsive Website Design in Loni", "Mobile Friendly Website Design in Loni", "Responsive Website Design Shirdi", "Fast Loading Website Developer in Loni"]
     },
     {
-      title: "Digital Marketing Strategies for Businesses in Pune",
-      date: "May 10, 2024",
-      excerpt: "Our Pune digital marketing team shares the top strategies to dominate the local market and reach more customers online. From SEO to social media marketing, we cover all aspects of digital growth for Pune-based startups and established enterprises.",
-      keywords: ["Digital Marketing Pune", "Pune Web Developer", "SEO Company Pune", "Best Digital Marketing Pune"]
+      title: "Ecommerce Website Benefits",
+      date: "May 15, 2026",
+      excerpt: "Take your retail store online. Learn how an ecommerce website developer in Loni and ecommerce website development Shirdi can expand your market and drive 24/7 sales.",
+      keywords: ["Ecommerce Website Developer in Loni", "Ecommerce Website Development Shirdi", "Ecommerce Developer Near Me", "Ecommerce SEO Services"]
     },
     {
-      title: "How to Choose the Best Web Developer in Maharashtra",
-      date: "May 08, 2024",
-      excerpt: "Selecting the right partner for your web project is crucial. We break down the key factors to consider when hiring a web developer in Maharashtra, focusing on expertise, local presence, and portfolio quality.",
-      keywords: ["Best Web Developer Maharashtra", "Web Design Company Maharashtra", "Top Software Agency"]
+      title: "Website Speed Optimization Tips",
+      date: "May 14, 2026",
+      excerpt: "Speed is a ranking factor. Get expert advice from a fast website development services provider on improving loading times and core web vitals.",
+      keywords: ["Fast Website Development Services", "Fast Loading Website Developer in Loni", "Technical SEO Services", "Best IT Company Near Me"]
     },
     {
-      title: "Boost Your Hotel Business in Shirdi with Expert SEO",
-      date: "May 06, 2024",
-      excerpt: "Shirdi's hospitality sector is highly competitive. Learn how specialized SEO for hotels in Shirdi can help you get more direct bookings and visibility on Google Maps. Our Shirdi digital marketing team has the expertise to help your hotel stand out.",
-      keywords: ["Hotel SEO Shirdi", "Shirdi Digital Marketing", "Top Web Developer Shirdi", "Local SEO Shirdi"]
+      title: "Modern UI UX Design Trends",
+      date: "May 13, 2026",
+      excerpt: "User experience dictates conversions. Explore the latest layouts and interactions with a top website designer near Loni offering premium UI UX design services in Loni.",
+      keywords: ["UI UX Design Services in Loni", "Top Website Designer Near Loni", "UI UX Design Services Shirdi", "Web Designer in Loni"]
     },
     {
-      title: "Custom Ecommerce Solutions for Ahmednagar Businesses",
-      date: "May 04, 2024",
-      excerpt: "Taking your retail business online? We offer custom ecommerce website development in Ahmednagar, helping local merchants sell their products globally with secure payment gateways and user-friendly interfaces.",
-      keywords: ["Ecommerce Ahmednagar", "Website Developer Ahmednagar", "Ahmednagar Software Company"]
+      title: "How SEO Helps Local Businesses",
+      date: "May 12, 2026",
+      excerpt: "Local customers are searching for you. Learn how local business SEO services and top SEO company near me can put your business on the map in Loni BK, KH, and Shirdi.",
+      keywords: ["How SEO Helps Local Businesses", "Local Business SEO Services", "Top SEO Company Near Me", "SEO Expert Near Me"]
     },
     {
-      title: "Social Media Growth for Startups in Loni",
-      date: "May 02, 2024",
-      excerpt: "Social media is the heartbeat of modern marketing. We share proven techniques for startups in Loni to grow their Instagram and Facebook presence, building a community of loyal customers and increasing brand awareness.",
-      keywords: ["Social Media Loni", "Digital Marketing Loni", "Loni Marketing Agency"]
+      title: "Best Website Development Company in Loni",
+      date: "May 11, 2026",
+      excerpt: "Looking for a tech partner? Discover why WebCraft is recognized as the best website development company in Loni and the professional website developer in Loni.",
+      keywords: ["Best Website Development Company in Loni", "Professional Website Developer in Loni", "Website Development Company in Loni", "Freelance Web Developer in Loni"]
     },
     {
-      title: "Mobile App Development Trends in Pune for 2024",
-      date: "April 30, 2024",
-      excerpt: "Stay ahead of the curve with our insights into the latest mobile app development trends in Pune. From AI integration to cross-platform solutions, we explore what makes a successful app in the current market.",
-      keywords: ["App Developer Pune", "Mobile App Pune", "Pune Tech Trends", "Software Development Pune"]
+      title: "Website Design Tips for Small Businesses",
+      date: "May 10, 2026",
+      excerpt: "Maximize your budget. Our small business website developer in Loni team shares critical tips for designing high-performance sites for local trades and services.",
+      keywords: ["Small Business Website Developer in Loni", "Affordable Web Design Services in Loni", "Small Business Website Developer Shirdi", "Local Website Designer in Loni"]
     },
     {
-      title: "Top Web Developer in Nashik: Scaling Your Business",
-      date: "April 28, 2024",
-      excerpt: "Nashik's growing industrial sector needs modern web solutions. As a top web developer in Nashik, we help manufacturers and service providers scale their operations with custom web platforms and SEO-driven digital marketing.",
-      keywords: ["Web Developer Nashik", "Digital Marketing Nashik", "Nashik Software Agency"]
+      title: "How to Rank Website on Google",
+      date: "May 09, 2026",
+      excerpt: "Unlock organic traffic. Discover how a website ranking expert and local SEO services Ahmednagar optimize websites to achieve page one rankings.",
+      keywords: ["How to Rank Website on Google", "Website Ranking Expert", "Google Ranking Services Pune", "Local SEO Services Ahmednagar"]
     },
     {
-      title: "Leading Digital Marketing Agency in Nagar (Ahmednagar)",
-      date: "April 26, 2024",
-      excerpt: "Looking for digital marketing in Nagar? Our team provides end-to-end solutions including SEO, PPC, and branding for businesses in Ahmednagar, ensuring they dominate the local search results and reach more customers.",
-      keywords: ["Digital Marketing Nagar", "Ahmednagar SEO", "Web Developer Nagar"]
+      title: "React Website Development Guide",
+      date: "May 08, 2026",
+      excerpt: "React powers modern interfaces. Learn how a React website developer in Loni and React developer Pune build super fast, dynamic web applications.",
+      keywords: ["React Website Developer in Loni", "React Developer Pune", "React Developer Shirdi", "Web Application Development in Loni"]
+    },
+    {
+      title: "Best Tools for Web Development",
+      date: "May 07, 2026",
+      excerpt: "From code editors to frameworks. Our full stack developer in Loni shares the ultimate tool stack used by professional website developers.",
+      keywords: ["Full Stack Developer in Loni", "Best Tools for Web Development", "Best IT Company in Loni", "Professional Website Developer Loni"]
+    },
+    {
+      title: "How to Improve Website SEO",
+      date: "May 06, 2026",
+      excerpt: "Simple adjustments can make a big difference. Learn search engine optimization services techniques that boost search visibility and keyword ranking.",
+      keywords: ["How to Improve Website SEO", "Website SEO Services", "Technical SEO Services", "Google SEO Services Nashik"]
+    },
+    {
+      title: "Best SEO Strategies for Businesses",
+      date: "May 05, 2026",
+      excerpt: "Stay ahead of the competition. Implement the best SEO strategies for businesses in 2026 to capture organic market share and scale your brand.",
+      keywords: ["Best SEO Strategies for Businesses", "Technical SEO Services", "SEO Services Company", "Local SEO Expert"]
+    },
+    {
+      title: "How Digital Marketing Increases Sales",
+      date: "May 04, 2026",
+      excerpt: "Convert clicks into revenue. Our online growth agency shares how professional digital marketing services and digital branding services drive sales.",
+      keywords: ["How Digital Marketing Increases Sales", "Professional Digital Marketing Services", "Digital Branding Agency", "Business Growth Agency"]
+    },
+    {
+      title: "Social Media Marketing Tips",
+      date: "May 03, 2026",
+      excerpt: "Build your online audience. Read our social media marketing agency tips for crafting viral reels, post schedules, and engaging brand profiles.",
+      keywords: ["Social Media Marketing Tips", "Social Media Marketing Agency", "Social Media Promotion Services", "Social Media Marketing Pune"]
+    },
+    {
+      title: "Google Ads Optimization Guide",
+      date: "May 02, 2026",
+      excerpt: "Maximize your advertising budget. Hire a Google ads expert near me to implement targeted pay-per-click strategies that convert instantly.",
+      keywords: ["Google Ads Optimization Guide", "Google Ads Management Services", "Google Ads Expert Near Me", "PPC Advertising Services"]
+    },
+    {
+      title: "Instagram Marketing for Businesses",
+      date: "May 01, 2026",
+      excerpt: "Leverage visual storytelling. Learn how Instagram marketing services can build brand loyalty and attract younger demographics to your business.",
+      keywords: ["Instagram Marketing for Businesses", "Instagram Marketing Services", "Instagram Marketing Agency Loni", "Instagram Marketing Shirdi"]
+    },
+    {
+      title: "Local SEO Guide for Small Businesses",
+      date: "April 30, 2026",
+      excerpt: "Win the local search war. Optimize your Google My Business profile and target local keywords with our comprehensive local SEO services guide.",
+      keywords: ["Local SEO Guide for Small Businesses", "Google My Business Optimization", "Local SEO Expert", "Local SEO Services Ahmednagar"]
+    },
+    {
+      title: "Best Marketing Strategies in 2026",
+      date: "April 29, 2026",
+      excerpt: "As algorithms change, your marketing must evolve. Discover the best marketing strategies in 2026 combining AI, content creation, and search advertising.",
+      keywords: ["Best Marketing Strategies in 2026", "Performance Marketing Agency", "Online Marketing Company", "Technical SEO Services"]
+    },
+    {
+      title: "How to Get More Website Traffic",
+      date: "April 28, 2026",
+      excerpt: "Turn your website into a traffic magnet. Explore organic traffic growth services and website ranking strategies to multiply your visitor numbers.",
+      keywords: ["How to Get More Website Traffic", "Organic Traffic Growth Services", "Website SEO Services", "Google Ranking Expert"]
+    },
+    {
+      title: "Facebook Ads Tips",
+      date: "April 27, 2026",
+      excerpt: "Target the right users with demographic data. Use Facebook marketing agency blueprints to set up high-converting remarketing campaigns.",
+      keywords: ["Facebook Ads Tips", "Facebook Marketing Agency", "Facebook Marketing Services Loni", "Facebook Ads Services Shirdi"]
+    },
+    {
+      title: "Content Marketing Strategies",
+      date: "April 26, 2026",
+      excerpt: "Content is king. Learn how a dedicated content marketing agency drives customer engagement through educational blogs, case studies, and guides.",
+      keywords: ["Content Marketing Strategies", "Content Marketing Agency", "YouTube Marketing Services", "Online Branding Tips"]
+    },
+    {
+      title: "Online Branding Tips",
+      date: "April 25, 2026",
+      excerpt: "A strong brand reduces client acquisition cost. Learn visual branding and online positioning from the top digital branding agency in Pune and Shirdi.",
+      keywords: ["Online Branding Tips", "Branding Agency", "Digital Branding Agency", "Branding Services Shirdi"]
+    },
+    {
+      title: "SEO vs Google Ads",
+      date: "April 24, 2026",
+      excerpt: "Organic search engine optimization services or instant paid traffic? We weigh the pros and cons of both channels to find the best fit for your budget.",
+      keywords: ["SEO vs Google Ads", "SEO Services Company", "PPC Advertising Services", "Google Ads Management Services"]
+    },
+    {
+      title: "Lead Generation Strategies",
+      date: "April 23, 2026",
+      excerpt: "Fill your pipeline. Our lead generation company shares the top funnels and landing page designs to convert cold traffic into hot leads.",
+      keywords: ["Lead Generation Strategies", "Lead Generation Company", "Lead Generation Services Loni", "Landing Page Designer Shirdi"]
+    },
+    {
+      title: "YouTube Marketing Tips",
+      date: "April 22, 2026",
+      excerpt: "Video content has the highest retention. Learn how YouTube marketing services can position your business as an industry authority.",
+      keywords: ["YouTube Marketing Tips", "YouTube Marketing Services", "Content Marketing Agency", "Social Media Promotion Services"]
+    },
+    {
+      title: "How to Rank Higher on Google",
+      date: "April 21, 2026",
+      excerpt: "Secure the top spot. A step-by-step checklist from a local Google ranking expert on off-page link building and technical SEO audits.",
+      keywords: ["How to Rank Higher on Google", "Google Ranking Expert", "Google Ranking Expert Shirdi", "Google Ranking Services Loni"]
     }
   ];
 
@@ -134,7 +236,7 @@ const BlogPage = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
+              transition={{ delay: Math.min(i, 6) * 0.05, duration: 0.5 }}
             >
               <div className="blog-card-meta">
                 <span className="blog-date">{post.date}</span>

@@ -53,11 +53,23 @@ const FAQ = () => {
     },
     {
       q: "Who is the best web developer in Loni?",
-      a: "WebCraft is widely recognized as the top software developer in Loni, providing world-class web development and digital marketing services to local businesses and startups."
+      a: "WebCraft is widely recognized as the top web developer in Loni. We provide world-class web development and digital marketing services to local businesses, startups, and established enterprises."
     },
     {
       q: "Do you provide web development services in Shirdi?",
-      a: "Absolutely! We are a leading web developer in Shirdi, helping local businesses establish a powerful online presence with modern, high-performance websites and strategic digital marketing."
+      a: "Absolutely! We are the premier web developer in Shirdi, helping local hospitality, retail, and religious tourism brands establish a powerful online presence with custom web platforms."
+    },
+    {
+      q: "Which is the top digital marketing agency in Shirdi?",
+      a: "WebCraft is the top digital marketing agency in Shirdi, offering expert Search Engine Optimization (SEO), pay-per-click advertising (PPC), hotel marketing, and comprehensive social media marketing."
+    },
+    {
+      q: "How does hiring the top web developer in Loni benefit my local business?",
+      a: "Hiring the top web developer in Loni ensures your business receives a fast, responsive, and SEO-optimized website that ranks highly on Google, drawing in local customers from Loni BK, Loni KH, and surrounding regions."
+    },
+    {
+      q: "Do you offer combined services for web development and digital marketing in Loni BK and Shirdi?",
+      a: "Yes! WebCraft offers a complete suite of services. You can hire us as your web development company in Shirdi and Loni BK, and simultaneously run campaigns with our top digital marketing team for holistic growth."
     }
   ];
 

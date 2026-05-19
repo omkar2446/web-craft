@@ -69,6 +69,17 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* SEO Description Paragraph */}
+      <motion.div
+        className="footer-seo-paragraph"
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 0.85, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <p>WebCraft Studio is a professional web development and digital marketing company providing services in Loni, Pune, Ahmednagar, Nashik, and Shirdi. We specialize in website development, ecommerce websites, SEO services, branding, UI/UX design, software development, Google Ads, social media marketing, and complete digital solutions for businesses and startups.</p>
+      </motion.div>
+
       {/* Massive WEBCRAFT text — scale in from center */}
       <div className="massive-text-container">
         <motion.h2
@@ -90,8 +101,8 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <span className="bottom-text">Build with the Loni BK Top Software Developer & Shirdi Top Software Developer</span>
-        <span className="bottom-text">@webcraft-studio | Loni BK Top Digital Marketing Team | Loni Top Software Developer</span>
+        <span className="bottom-text">Build with the top web developer in Loni BK & best software developer in Shirdi</span>
+        <span className="bottom-text">@webcraft-studio | Shirdi Top Digital Marketing Agency | Loni Top Web Developer</span>
       </motion.div>
     </footer>
   );

@@ -34,29 +34,17 @@ function TiltCard({ children, className }) {
 const Portfolio = () => {
   const projects = [
     {
-      title: "Jay Yogeshwar Solar",
-      link: "https://www.jayyogeshwarsolar.in/",
-      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop",
-      bgColor: "#f6d94e"
-    },
-    {
-      title: "Agriconnect",
-      link: "https://agriconnect-ohet.vercel.app/",
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop",
-      bgColor: "#eef2e6"
-    },
-    {
-      title: "SongQueue",
-      link: "https://songqueue.vercel.app/",
-      image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=800&auto=format&fit=crop",
-      bgColor: "#050505"
-    },
-    {
-      title: "Foodihub",
-      link: "https://foodiehub-z1hk.onrender.com/",
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop",
-      bgColor: "#ffedd5"
-    }
+  title: "Jay Yogeshwar Solar",
+  link: "https://www.jayyogeshwarsolar.in/",
+  image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop",
+  bgColor: "#F6D94E"
+},
+{
+  title: "Your Project Next",
+  link: "#",
+  image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=800&auto=format&fit=crop",
+  bgColor: "#F5F5F5"
+}
   ];
 
   return (

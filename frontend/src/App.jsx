@@ -7,6 +7,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import PricingPage from './pages/PricingPage';
 import SocialMediaMarketing from './pages/SocialMediaMarketing';
+import BlogPage from './pages/BlogPage';
 import Lenis from 'lenis';
 import { AnimatePresence } from 'framer-motion';
 import CustomCursor from './components/CustomCursor';
@@ -71,6 +72,7 @@ function AppContent() {
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/social-media-marketing" element={<SocialMediaMarketing />} />
+            <Route path="/blog" element={<BlogPage />} />
           </Routes>
         </AnimatePresence>
       </main>

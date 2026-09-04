@@ -45,7 +45,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <p className="text-editorial">Your brand deserves to be<br />Seen, Heard, and Remembered by the best Web Developer in Loni.</p>
+            <p className="text-editorial">Your brand deserves to be<br />Seen, Heard, and Remembered by the top web developer in Loni BK and KH. We are the premier Shirdi top digital marketing team and best software developer in Shirdi.</p>
           </motion.div>
           
           <motion.a 
@@ -56,7 +56,7 @@ const Hero = () => {
             transition={{ delay: 0.8, duration: 0.5 }}
             style={{ textDecoration: 'none', display: 'inline-block' }}
           >
-            Contact Top Pune Developer
+            Contact Loni Top Web Developer
           </motion.a>
 
           <motion.div 
@@ -67,7 +67,7 @@ const Hero = () => {
           >
             <img 
               src="/380dc924-040c-42aa-90b0-87f659cf794e.jpeg" 
-              alt="WebCraft Studio - Best Web Developer and Digital Marketing Team in Loni, Pune" 
+              alt="WebCraft - Loni Top Web Developer and Best Software Developer in Shirdi, Loni BK, Loni KH" 
               className="hero-visual-img"
             />
           </motion.div>

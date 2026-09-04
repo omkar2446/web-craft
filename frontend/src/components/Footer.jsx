@@ -1,9 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
-  const footerLinks = ['Home', 'Services', 'Benefits', 'Portfolio', 'Reviews', 'About'];
+  const footerLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Pricing', path: '/pricing' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Blog', path: '/blog' }
+  ];
   const footerSections = [
     { label: 'PHONE', value: <a href="tel:9405909432" style={{ color: 'inherit', textDecoration: 'none' }}>+91 9405909432 <br /> +91 9307919092</a> },
 
@@ -11,6 +19,10 @@ const Footer = () => {
     {
       label: 'Address',
       value: <>413714<br />LONI,<br />AHILYANAGAR<br />MAHARASHTRA</>
+    },
+    {
+      label: 'Service Areas',
+      value: <>Loni BK, Loni KH,<br />Shirdi, Rahata,<br />Pune & Nashik</>
     },
     {
       label: 'Opening Hours',
@@ -41,21 +53,32 @@ const Footer = () => {
         {/* Right: Nav links — each stagger from the right */}
         <div className="footer-right">
           {footerLinks.map((link, i) => (
-            <motion.a
+            <motion.div
               key={i}
-              href="#"
-              className="footer-link"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: 'easeOut', delay: i * 0.08 }}
               whileHover={{ x: 6, transition: { duration: 0.15 } }}
             >
-              {link}
-            </motion.a>
+              <Link to={link.path} className="footer-link">
+                {link.name}
+              </Link>
+            </motion.div>
           ))}
         </div>
       </div>
+
+      {/* SEO Description Paragraph */}
+      <motion.div
+        className="footer-seo-paragraph"
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 0.85, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <p>WebCraft Studio is a professional web development and digital marketing company providing services in Loni, Pune, Ahmednagar, Nashik, and Shirdi. We specialize in website development, ecommerce websites, SEO services, branding, UI/UX design, software development, Google Ads, social media marketing, and complete digital solutions for businesses and startups.</p>
+      </motion.div>
 
       {/* Massive WEBCRAFT text — scale in from center */}
       <div className="massive-text-container">
@@ -78,8 +101,8 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <span className="bottom-text">Build it with the best Web Developer in Loni</span>
-        <span className="bottom-text">@webcraft-studio | Top Ahilyanagar's Digital Agency</span>
+        <span className="bottom-text">Build with the top web developer in Loni BK & best software developer in Shirdi</span>
+        <span className="bottom-text">@webcraft-studio | Shirdi Top Digital Marketing Agency | Loni Top Web Developer</span>
       </motion.div>
     </footer>
   );
